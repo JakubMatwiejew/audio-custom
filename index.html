@@ -67,10 +67,13 @@
   "sameAs": [
     "https://instagram.com/audiocustompl"
   ],
-  "areaServed": {
-    "@type": "Place",
-    "name": "Worldwide"
-  },
+  "areaServed": [
+    {"@type": "Place", "name": "Europe"},
+    {"@type": "Country", "name": "United States"},
+    {"@type": "Country", "name": "Canada"},
+    {"@type": "Country", "name": "South Korea"},
+    {"@type": "Country", "name": "Australia"}
+  ],
   "knowsAbout": [
     "Synthesizer restoration",
     "Vintage synthesizer panels",
@@ -143,6 +146,14 @@
   "mainEntity": [
     {
       "@type": "Question",
+      "name": "Do you ship worldwide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. About 99% of our work goes abroad: across Europe, to the USA, Canada, South Korea and Australia. Panels and parts are packed for long-distance transit and we agree the shipping method with you for each job. Distance is not a problem, it's how we work every day."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Do you repair electronics?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -171,14 +182,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Every job is quoted individually, because every panel arrives in a different condition. Send photos and we'll give you a price."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you work with clients outside Poland?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many of our clients are abroad. Shipping is agreed for each job."
       }
     },
     {
@@ -496,7 +499,7 @@
 
   .stats {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin-top: 48px;
     padding-top: 40px;
@@ -916,7 +919,7 @@
   <div class="hero-text">
     <div class="eyebrow">Synthesizer Restoration · Est. 2013</div>
     <h1>Some say music gear is just <em>equipment.</em><br/>Not for us.</h1>
-    <p class="lead">Breathing life into synthesizers and samplers since 2013. Faceplates, panels and side cheeks — restored to factory spec or reimagined in custom finishes.</p>
+    <p class="lead">Breathing life into synthesizers and samplers since 2013. Faceplates, panels and side cheeks — restored to factory spec or reimagined in custom finishes, for clients across Europe, North America, Korea and Australia.</p>
     <div class="cta-row">
       <a href="#contact" class="btn btn-primary">Start a project <span class="arrow">→</span></a>
       <a href="#gallery" class="btn btn-ghost">See the work</a>
@@ -927,6 +930,11 @@
     <img src="hero.jpg" alt="Restored Jupiter-8 panel detail" />
   </div>
 </header>
+
+<!-- ============ WORLDWIDE STRIP ============ -->
+<div class="gear-strip" aria-label="We ship to clients in Europe, the United States, Canada, South Korea and Australia">
+  <div class="gear-track" aria-hidden="true"><span>Europe</span><span>United States</span><span>Canada</span><span>South Korea</span><span>Australia</span><span>Shipped from Poland</span><span>Europe</span><span>United States</span><span>Canada</span><span>South Korea</span><span>Australia</span><span>Shipped from Poland</span></div>
+</div>
 
 <!-- ============ ABOUT ============ -->
 <section class="about" id="about">
@@ -952,6 +960,10 @@
         <div>
           <div class="stat-num">100%</div>
           <div class="stat-label">Hand-finished</div>
+        </div>
+        <div>
+          <div class="stat-num">99%</div>
+          <div class="stat-label">Shipped abroad</div>
         </div>
       </div>
     </div>
@@ -1139,6 +1151,10 @@
   <h2>Questions we hear <em>most.</em></h2>
   <div class="faq-list">
     <details>
+      <summary>Do you ship worldwide?</summary>
+      <p>Yes. About 99% of our work goes abroad: across Europe, to the USA, Canada, South Korea and Australia. Panels and parts are packed for long-distance transit and we agree the shipping method with you for each job. Distance is not a problem, it's how we work every day.</p>
+    </details>
+    <details>
       <summary>Do you repair electronics?</summary>
       <p>No. We work on the visual side only: panels, side cheeks, enclosures and small parts. Electronic repairs stay with your technician, and we're happy to work alongside them.</p>
     </details>
@@ -1153,10 +1169,6 @@
     <details>
       <summary>How much does it cost?</summary>
       <p>Every job is quoted individually, because every panel arrives in a different condition. Send photos and we'll give you a price.</p>
-    </details>
-    <details>
-      <summary>Do you work with clients outside Poland?</summary>
-      <p>Yes. Many of our clients are abroad. Shipping is agreed for each job.</p>
     </details>
     <details>
       <summary>Can you make panels or enclosures for my own instrument?</summary>
