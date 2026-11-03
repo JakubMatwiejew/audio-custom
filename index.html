@@ -115,7 +115,7 @@
       "itemOffered": {
         "@type": "Product",
         "name": "Replacement synthesizer panels",
-        "description": "Metal replacement faceplates with the original layout and legends: Roland Space Echo RE-201, RE-301 and cloned panels for other popular instruments."
+        "description": "Metal replacement faceplates with the original layout and legends: Roland Space Echo RE-201 and RE-301 available; Akai MPC2000XL and Roland TR-909 coming soon."
       }
     },
     {
@@ -756,7 +756,12 @@
     border-radius: 999px;
     margin-bottom: 24px;
   }
-  .card-soon .card-status { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .card-status.status-soon { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .card-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .card-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .rep-group + .rep-group { margin-top: 56px; }
+  .rep-head { margin-bottom: 4px; }
+  .rep-head .card-status { margin-bottom: 16px; }
   .card h3 {
     font-family: var(--serif);
     font-weight: 400;
@@ -882,14 +887,14 @@
     .stat-num { font-size: 44px; }
     .gear-track { font-size: 22px; gap: 40px; }
     .gear-track span { gap: 40px; }
-    .card-grid { grid-template-columns: 1fr 1fr; }
+    .card-grid, .card-grid.cols-3 { grid-template-columns: 1fr 1fr; }
     .card, .card + .card { padding: 28px 20px 32px 0; border-right: 0; border-bottom: 1px solid var(--line); }
     .card:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--line); }
     .steps { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
     .faq-list summary { font-size: 19px; }
   }
   @media (max-width: 560px) {
-    .card-grid { grid-template-columns: 1fr; }
+    .card-grid, .card-grid.cols-2, .card-grid.cols-3 { grid-template-columns: 1fr; }
     .card:nth-child(even) { padding-left: 0; border-left: 0; }
     .steps { grid-template-columns: 1fr; }
   }
@@ -993,7 +998,7 @@
     <div class="service-item">
       <div class="service-num">04 /</div>
       <div class="service-name">Replacement panels</div>
-      <div class="service-desc">New metal faceplates for instruments whose original panel is beyond saving, from Space Echo RE-201 and RE-301 to cloned panels for other popular models. Cloned enclosures coming soon. <a href="#replacement">See replacement panels</a></div>
+      <div class="service-desc">New metal faceplates for instruments whose original panel is beyond saving, available now for the Space Echo RE-201 and RE-301, with the Akai MPC2000XL and Roland TR-909 coming soon. <a href="#replacement">See replacement panels</a></div>
     </div>
     <div class="service-item">
       <div class="service-num">05 /</div>
@@ -1012,28 +1017,37 @@
 <section class="replacement" id="replacement">
   <div class="section-label">— Replacement panels</div>
   <h2>When the original is gone, we make a <em>new one.</em></h2>
-  <p class="intro">Some panels are too far gone to restore. For popular instruments we make new metal faceplates with the original layout and legends, and we're starting to clone complete enclosures.</p>
+  <p class="intro">Some panels are too far gone to restore. For popular instruments we make new metal replacements with the original layout and legends. Space Echo panels are available now, more models are on the way.</p>
 
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-status">Available</div>
-      <h3>Space Echo RE-201</h3>
-      <p>Metal replacement faceplate for the Roland RE-201, with the original layout and legends.</p>
+  <div class="rep-group">
+    <div class="rep-head"><span class="card-status">Available now</span></div>
+    <div class="card-grid cols-2">
+      <div class="card">
+        <h3>Roland Space Echo RE-201</h3>
+        <p>Metal replacement faceplate with the original layout and legends.</p>
+      </div>
+      <div class="card">
+        <h3>Roland Space Echo RE-301</h3>
+        <p>Metal replacement faceplate made to the same spec as the original.</p>
+      </div>
     </div>
-    <div class="card">
-      <div class="card-status">Available</div>
-      <h3>Space Echo RE-301</h3>
-      <p>Metal replacement faceplate for the Roland RE-301, made to the same spec as the original.</p>
-    </div>
-    <div class="card">
-      <div class="card-status">On request</div>
-      <h3>Cloned panels</h3>
-      <p>New faceplates for other popular synths, samplers and drum machines. Tell us the model.</p>
-    </div>
-    <div class="card card-soon">
-      <div class="card-status">Soon</div>
-      <h3>Cloned enclosures</h3>
-      <p>Complete enclosures for popular instruments, reproduced in metal for units with damaged or missing cases.</p>
+  </div>
+
+  <div class="rep-group">
+    <div class="rep-head"><span class="card-status status-soon">Coming soon</span></div>
+    <div class="card-grid cols-3">
+      <div class="card">
+        <h3>Akai MPC2000XL</h3>
+        <p>Cloned in metal for units with damaged, worn or missing originals.</p>
+      </div>
+      <div class="card">
+        <h3>Roland TR-909</h3>
+        <p>Cloned in metal for units with damaged, worn or missing originals.</p>
+      </div>
+      <div class="card">
+        <h3>More models</h3>
+        <p>Other popular synths, samplers and drum machines are on the way. Tell us which one you need.</p>
+      </div>
     </div>
   </div>
   <p class="note-line">Looking for a specific model? <a href="mailto:custom@audiocustom.pl?subject=Replacement%20panel%20inquiry">Ask about a replacement panel</a></p>
