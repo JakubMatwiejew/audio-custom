@@ -6,8 +6,8 @@
 
 <!-- ============ PRIMARY SEO ============ -->
 <title>Audio Custom — Synthesizer Restoration & Custom Panels | Renowacja syntezatorów</title>
-<meta name="description" content="Synthesizer restoration & custom panels since 2013. Faceplates and side cheeks for Roland Jupiter-8, Juno-60, Akai MPC. Replacement panels for Space Echo RE-201 / RE-301, panels and enclosures for synth makers, 3D-printed replacement parts. Renowacja paneli syntezatorów." />
-<meta name="keywords" content="synthesizer restoration, synth restoration, custom synthesizer panels, Jupiter-8 panel, Juno-60 panel, MPC restoration, Space Echo, renowacja syntezatorów, panele syntezatorów, blachy do syntezatorów, obudowy do syntezatorów, Space Echo RE-201 panel, Space Echo RE-301 panel, synth enclosures, Eurorack panels, 3D printed synth knobs, custom faceplates, vintage synth restoration, Roland panel restoration, Akai MPC panels, synth refinishing" />
+<meta name="description" content="Synthesizer restoration & custom panels since 2013. Faceplates and side cheeks for Roland Jupiter-8, Juno-60, Akai MPC. Replacement panels for Space Echo RE-201 / Chorus Echo RE-301, panels and enclosures for synth makers, 3D-printed replacement parts. Renowacja paneli syntezatorów." />
+<meta name="keywords" content="synthesizer restoration, synth restoration, custom synthesizer panels, Jupiter-8 panel, Juno-60 panel, MPC restoration, Space Echo, renowacja syntezatorów, panele syntezatorów, blachy do syntezatorów, obudowy do syntezatorów, Space Echo RE-201 panel, Chorus Echo RE-301 panel, synth enclosures, Eurorack panels, 3D printed synth knobs, custom faceplates, vintage synth restoration, Roland panel restoration, Akai MPC panels, synth refinishing" />
 <meta name="author" content="Audio Custom" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="googlebot" content="index, follow" />
@@ -115,7 +115,7 @@
       "itemOffered": {
         "@type": "Product",
         "name": "Replacement synthesizer panels",
-        "description": "Metal replacement faceplates with the original layout and legends: Roland Space Echo RE-201 and RE-301 available; Akai MPC2000XL and Roland TR-909 coming soon."
+        "description": "Metal replacement faceplates with the original layout and legends: Roland Space Echo RE-201 and Chorus Echo RE-301 available; Akai MPC2000XL and Roland TR-909 coming soon."
       }
     },
     {
@@ -757,6 +757,36 @@
     margin-bottom: 24px;
   }
   .card-status.status-soon { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .rep-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 56px;
+  }
+  .rep-photos figure, .parts-top figure { margin: 0; }
+  .rep-photos img, .parts-top img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    background: var(--line);
+  }
+  figcaption {
+    margin-top: 12px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+  .parts-top {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 80px;
+    align-items: start;
+    margin-bottom: 56px;
+  }
+  .parts-top .intro { margin-bottom: 0; }
   .rep-list { border-top: 1px solid var(--ink); }
   .rep-row {
     display: grid;
@@ -905,6 +935,8 @@
     .gear-track span { gap: 40px; }
     .card-grid { grid-template-columns: 1fr 1fr; }
     .rep-row { grid-template-columns: 1fr auto; gap: 10px 16px; }
+    .rep-photos { gap: 12px; margin-bottom: 40px; }
+    .parts-top { grid-template-columns: 1fr; gap: 32px; margin-bottom: 40px; }
     .rep-row h3 { font-size: 23px; }
     .rep-row p { grid-column: 1 / -1; grid-row: 2; }
     .rep-row .card-status { grid-row: 1; grid-column: 2; align-self: center; }
@@ -915,6 +947,7 @@
   }
   @media (max-width: 560px) {
     .card-grid { grid-template-columns: 1fr; }
+    .rep-photos { grid-template-columns: 1fr; }
     .card:nth-child(even) { padding-left: 0; border-left: 0; }
     .steps { grid-template-columns: 1fr; }
   }
@@ -1018,7 +1051,7 @@
     <div class="service-item">
       <div class="service-num">04 /</div>
       <div class="service-name">Replacement panels</div>
-      <div class="service-desc">New metal faceplates for instruments whose original panel is beyond saving, available now for the Space Echo RE-201 and RE-301, with the Akai MPC2000XL and Roland TR-909 coming soon. <a href="#replacement">See replacement panels</a></div>
+      <div class="service-desc">New metal faceplates for instruments whose original panel is beyond saving, available now for the Roland Space Echo RE-201 and Chorus Echo RE-301, with the Akai MPC2000XL and Roland TR-909 coming soon. <a href="#replacement">See replacement panels</a></div>
     </div>
     <div class="service-item">
       <div class="service-num">05 /</div>
@@ -1037,7 +1070,18 @@
 <section class="replacement" id="replacement">
   <div class="section-label">— Replacement panels</div>
   <h2>When the original is gone, we make a <em>new one.</em></h2>
-  <p class="intro">Some panels are too far gone to restore. For popular instruments we make new metal replacements with the original layout and legends. Space Echo panels are available now, more models are on the way.</p>
+  <p class="intro">Some panels are too far gone to restore. For popular instruments we make new metal replacements with the original layout and legends. Space Echo and Chorus Echo panels are available now, more models are on the way.</p>
+
+  <div class="rep-photos">
+    <figure>
+      <img src="replacement-re201.jpg" alt="New metal replacement faceplate for Roland Space Echo RE-201" loading="lazy" width="894" height="901" />
+      <figcaption>Space Echo RE&#8209;201 · replacement faceplate</figcaption>
+    </figure>
+    <figure>
+      <img src="replacement-re301.jpg" alt="New metal replacement faceplate for Roland Chorus Echo RE-301" loading="lazy" width="896" height="900" />
+      <figcaption>Chorus Echo RE&#8209;301 · replacement faceplate</figcaption>
+    </figure>
+  </div>
 
   <div class="rep-list">
     <div class="rep-row">
@@ -1046,7 +1090,7 @@
       <span class="card-status">Available</span>
     </div>
     <div class="rep-row">
-      <h3>Roland Space Echo RE&#8209;301</h3>
+      <h3>Roland Chorus Echo RE&#8209;301</h3>
       <p>Metal replacement faceplate made to the same spec as the original.</p>
       <span class="card-status">Available</span>
     </div>
@@ -1103,8 +1147,16 @@
 <!-- ============ PARTS / 3D ============ -->
 <section class="parts" id="parts">
   <div class="section-label">— Lost parts, remade</div>
-  <h2>The knob that broke in 1987 can be <em>made again.</em></h2>
-  <p class="intro">Many small parts of vintage instruments have been out of production for decades. We measure an original, model it and reproduce it with 3D printing, then finish it to sit naturally next to the original parts.</p>
+  <div class="parts-top">
+    <div>
+      <h2>The knob that broke in 1987 can be <em>made again.</em></h2>
+      <p class="intro">Many small parts of vintage instruments have been out of production for decades. We measure an original, model it and reproduce it with 3D printing, then finish it to sit naturally next to the original parts.</p>
+    </div>
+    <figure>
+      <img src="parts-data-knob.jpg" alt="3D-printed replacement data wheel on an Akai MPC2000XL panel" loading="lazy" width="892" height="902" />
+      <figcaption>Data wheel for an Akai MPC2000XL, remade with 3D printing</figcaption>
+    </figure>
+  </div>
 
   <div class="card-grid">
     <div class="card">
