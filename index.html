@@ -6,8 +6,8 @@
 
 <!-- ============ PRIMARY SEO ============ -->
 <title>Audio Custom — Synthesizer Restoration & Custom Panels | Renowacja syntezatorów</title>
-<meta name="description" content="Synthesizer restoration & custom panels since 2013. Faceplates and side cheeks for Roland Jupiter-8, Juno-60, Akai MPC, Space Echo. Renowacja paneli syntezatorów — restoration to factory spec or custom finishes." />
-<meta name="keywords" content="synthesizer restoration, synth restoration, custom synthesizer panels, Jupiter-8 panel, Juno-60 panel, MPC restoration, Space Echo, renowacja syntezatorów, panele syntezatorów, blachy do syntezatorów, custom faceplates, vintage synth restoration, Roland panel restoration, Akai MPC panels, synth refinishing" />
+<meta name="description" content="Synthesizer restoration & custom panels since 2013. Faceplates and side cheeks for Roland Jupiter-8, Juno-60, Akai MPC. Replacement panels for Space Echo RE-201 / RE-301, panels and enclosures for synth makers, 3D-printed replacement parts. Renowacja paneli syntezatorów." />
+<meta name="keywords" content="synthesizer restoration, synth restoration, custom synthesizer panels, Jupiter-8 panel, Juno-60 panel, MPC restoration, Space Echo, renowacja syntezatorów, panele syntezatorów, blachy do syntezatorów, obudowy do syntezatorów, Space Echo RE-201 panel, Space Echo RE-301 panel, synth enclosures, Eurorack panels, 3D printed synth knobs, custom faceplates, vintage synth restoration, Roland panel restoration, Akai MPC panels, synth refinishing" />
 <meta name="author" content="Audio Custom" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="googlebot" content="index, follow" />
@@ -106,6 +106,95 @@
         "@type": "Service",
         "name": "Custom synthesizer panel design",
         "description": "Custom faceplates and side cheeks in finishes of your choosing for private owners and hardware manufacturers."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Product",
+        "name": "Replacement synthesizer panels",
+        "description": "Metal replacement faceplates with the original layout and legends: Roland Space Echo RE-201, RE-301 and cloned panels for other popular instruments."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Front panels, module panels and enclosures for synthesizer makers",
+        "description": "Front panels, module panels and lacquered sheet-metal enclosures for custom synthesizers, from prototype to production run."
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Reverse engineering and 3D-printed replacement parts",
+        "description": "Discontinued knobs, caps, covers and brackets for vintage instruments, measured, modelled and reproduced with 3D printing."
+      }
+    }
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you repair electronics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. We work on the visual side only: panels, side cheeks, enclosures and small parts. Electronic repairs stay with your technician, and we're happy to work alongside them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to send the whole instrument?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Usually not. Most jobs need only the panel, the side cheeks or the part itself. Tell us the model and the job, and we'll say exactly what to send."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the job and the queue. You get a timeline together with the quote, before anything is sent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every job is quoted individually, because every panel arrives in a different condition. Send photos and we'll give you a price."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you work with clients outside Poland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Many of our clients are abroad. Shipping is agreed for each job."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you make panels or enclosures for my own instrument?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, from a single prototype to a production run of a few hundred pieces. Send a drawing or a sketch and the quantity you have in mind. More for makers"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you reproduce a part I no longer have?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Often yes. We need something to measure: a matching part from another unit, or clear photos with dimensions. How part reproduction works"
       }
     }
   ]
@@ -607,6 +696,154 @@
     gap: 16px;
   }
 
+  .service-desc a { color: var(--ink); border-bottom: 1px solid var(--accent); }
+  .service-desc a:hover { color: var(--accent); }
+  .tag-new {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 9px;
+    font-family: var(--display);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    vertical-align: middle;
+    background: var(--accent);
+    color: var(--bg);
+    border-radius: 999px;
+  }
+
+  /* === MAKERS + PARTS (card grids) === */
+  .replacement, .makers, .parts { border-top: 1px solid var(--line); }
+  .replacement { background: var(--bg-warm); }
+  .parts { background: var(--bg); }
+  .intro {
+    font-size: 19px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 640px;
+    margin: -16px 0 56px;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--ink);
+  }
+  .card {
+    padding: 32px 28px 36px 0;
+    border-right: 1px solid var(--line);
+  }
+  .card + .card { padding-left: 28px; }
+  .card:last-child { border-right: 0; }
+  .card-num {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  .card-status {
+    display: inline-block;
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border: 1px solid var(--ink);
+    border-radius: 999px;
+    margin-bottom: 24px;
+  }
+  .card-soon .card-status { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .card h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.015em;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .card p { font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
+  .note-line {
+    margin-top: 48px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 20px;
+    color: var(--ink);
+  }
+  .note-line a { border-bottom: 1px solid var(--accent); }
+  .note-line a:hover { color: var(--accent); }
+
+  /* === PROCESS === */
+  .process { border-top: 1px solid var(--line); }
+  .steps {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    counter-reset: step;
+  }
+  .steps li {
+    counter-increment: step;
+    border-top: 2px solid var(--ink);
+    padding-top: 20px;
+  }
+  .steps li::before {
+    content: counter(step, decimal-leading-zero);
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    color: var(--accent);
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+  .steps strong {
+    display: block;
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+  .steps span { font-size: 14px; line-height: 1.6; color: var(--ink-soft); }
+
+  /* === FAQ === */
+  .faq { border-top: 1px solid var(--line); background: var(--bg-warm); }
+  .faq-list { max-width: 880px; border-top: 1px solid var(--line); }
+  .faq-list details { border-bottom: 1px solid var(--line); }
+  .faq-list summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 26px 48px 26px 0;
+    position: relative;
+    font-family: var(--serif);
+    font-size: 22px;
+    letter-spacing: -0.01em;
+  }
+  .faq-list summary::-webkit-details-marker { display: none; }
+  .faq-list summary::after {
+    content: '+';
+    position: absolute;
+    right: 4px;
+    top: 22px;
+    font-family: var(--sans);
+    font-weight: 300;
+    font-size: 28px;
+    color: var(--accent);
+    transition: transform 0.25s ease;
+  }
+  .faq-list details[open] summary::after { transform: rotate(45deg); }
+  .faq-list summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .faq-list p a { border-bottom: 1px solid var(--accent); }
+  .faq-list p a:hover { color: var(--accent); }
+  .faq-list p {
+    padding: 0 48px 28px 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink-soft);
+    max-width: 720px;
+  }
+
   /* === ANIMATIONS === */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
@@ -643,6 +880,20 @@
     .stat-num { font-size: 44px; }
     .gear-track { font-size: 22px; gap: 40px; }
     .gear-track span { gap: 40px; }
+    .card-grid { grid-template-columns: 1fr 1fr; }
+    .card, .card + .card { padding: 28px 20px 32px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+    .card:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--line); }
+    .steps { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
+    .faq-list summary { font-size: 19px; }
+  }
+  @media (max-width: 560px) {
+    .card-grid { grid-template-columns: 1fr; }
+    .card:nth-child(even) { padding-left: 0; border-left: 0; }
+    .steps { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
   }
 </style>
 </head>
@@ -651,9 +902,11 @@
 <nav id="nav">
   <a href="#" class="logo" aria-label="Audio Custom — synthesizer restoration"><img src="logo.png" alt="Audio Custom logo — synthesizer restoration & custom panels" /></a>
   <div class="nav-links">
-    <a href="#about">About</a>
     <a href="#services">Services</a>
+    <a href="#replacement">Replacement</a>
+    <a href="#makers">For makers</a>
     <a href="#gallery">Work</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -708,7 +961,7 @@
 <!-- ============ SERVICES ============ -->
 <section id="services">
   <div class="section-label">— What we do</div>
-  <h2>Three ways to bring a panel <em>back.</em></h2>
+  <h2>From one tired panel to a <em>production run.</em></h2>
 
   <div class="services-list">
     <div class="service-item">
@@ -724,9 +977,117 @@
     <div class="service-item">
       <div class="service-num">03 /</div>
       <div class="service-name">Custom design</div>
-      <div class="service-desc">Your synth, your colour. Custom faceplates and side cheeks in finishes of your choosing — whether you're a private owner or a hardware maker shipping a new product.</div>
+      <div class="service-desc">Your synth, your colour. Custom faceplates and side cheeks in finishes of your choosing for private owners who want their instrument to look like nobody else's.</div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">04 /</div>
+      <div class="service-name">Replacement panels</div>
+      <div class="service-desc">New metal faceplates for instruments whose original panel is beyond saving, from Space Echo RE-201 and RE-301 to cloned panels for other popular models. Cloned enclosures coming soon. <a href="#replacement">See replacement panels</a></div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">05 /</div>
+      <div class="service-name">Panels &amp; enclosures for makers</div>
+      <div class="service-desc">Front panels, module panels and complete enclosures for custom synthesizers and small production runs, from the first prototype to the series. <a href="#makers">Working with makers</a></div>
+    </div>
+    <div class="service-item">
+      <div class="service-num">06 /</div>
+      <div class="service-name">Lost parts, remade<span class="tag-new">NEW</span></div>
+      <div class="service-desc">Knobs, caps, covers and brackets that are no longer made, reverse engineered and reproduced with 3D printing. <a href="#parts">How it works</a></div>
     </div>
   </div>
+</section>
+
+<!-- ============ REPLACEMENT ============ -->
+<section class="replacement" id="replacement">
+  <div class="section-label">— Replacement panels</div>
+  <h2>When the original is gone, we make a <em>new one.</em></h2>
+  <p class="intro">Some panels are too far gone to restore. For popular instruments we make new metal faceplates with the original layout and legends, and we're starting to clone complete enclosures.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-status">Available</div>
+      <h3>Space Echo RE-201</h3>
+      <p>Metal replacement faceplate for the Roland RE-201, with the original layout and legends.</p>
+    </div>
+    <div class="card">
+      <div class="card-status">Available</div>
+      <h3>Space Echo RE-301</h3>
+      <p>Metal replacement faceplate for the Roland RE-301, made to the same spec as the original.</p>
+    </div>
+    <div class="card">
+      <div class="card-status">On request</div>
+      <h3>Cloned panels</h3>
+      <p>New faceplates for other popular synths, samplers and drum machines. Tell us the model.</p>
+    </div>
+    <div class="card card-soon">
+      <div class="card-status">Soon</div>
+      <h3>Cloned enclosures</h3>
+      <p>Complete enclosures for popular instruments, reproduced in metal for units with damaged or missing cases.</p>
+    </div>
+  </div>
+  <p class="note-line">Looking for a specific model? <a href="mailto:custom@audiocustom.pl?subject=Replacement%20panel%20inquiry">Ask about a replacement panel</a></p>
+</section>
+
+<!-- ============ MAKERS ============ -->
+<section class="makers" id="makers">
+  <div class="section-label">— For makers</div>
+  <h2>Building a synth? We make the <em>metal</em> around it.</h2>
+  <p class="intro">Hardware makers and builders of custom instruments come to us for the parts people see and touch: front panels, module panels and complete enclosures. One prototype or a few hundred pieces.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-num">01</div>
+      <h3>Front panels</h3>
+      <p>Cut, drilled, finished and printed to your drawing. Legends, colours and finish to match your design.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">02</div>
+      <h3>Module panels</h3>
+      <p>Panels for synth modules and custom formats, made as a matching set so a whole system looks like one instrument.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">03</div>
+      <h3>Enclosures</h3>
+      <p>Sheet-metal enclosures built with our fabrication partners, lacquered and ready for your electronics.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">04</div>
+      <h3>Prototype to series</h3>
+      <p>We start with a prototype made exactly like the series version. Once you sign it off, we produce the run.</p>
+    </div>
+  </div>
+  <p class="note-line">Send a drawing, a sketch or a photo of a panel you like. <a href="mailto:custom@audiocustom.pl?subject=Panels%20%2F%20enclosures%20for%20my%20instrument">custom@audiocustom.pl</a></p>
+</section>
+
+<!-- ============ PARTS / 3D ============ -->
+<section class="parts" id="parts">
+  <div class="section-label">— Lost parts, remade</div>
+  <h2>The knob that broke in 1987 can be <em>made again.</em></h2>
+  <p class="intro">Many small parts of vintage instruments have been out of production for decades. We measure an original, model it and reproduce it with 3D printing, then finish it to sit naturally next to the original parts.</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-num">01</div>
+      <h3>Send the part</h3>
+      <p>The broken piece, a matching part from another unit, or clear photos with measurements.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">02</div>
+      <h3>We model it</h3>
+      <p>The part is measured and rebuilt as a 3D model. Broken or missing sections are reconstructed.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">03</div>
+      <h3>Test print</h3>
+      <p>A first print is checked for fit against the instrument before anything else is made.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">04</div>
+      <h3>Finished part</h3>
+      <p>Printed and finished in the colour of the original. One piece or a full set.</p>
+    </div>
+  </div>
+  <p class="note-line">Knobs, slider caps, buttons, battery covers, brackets, feet. If it's missing, ask.</p>
 </section>
 
 <!-- ============ GALLERY ============ -->
@@ -756,6 +1117,55 @@
     <div class="g-item g-7">
       <img src="hero.jpg" alt="Roland Jupiter-8 panel with custom orange detail" loading="lazy" />
     </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="section-label">— How it works</div>
+  <h2>Five steps from your bench to <em>ours</em> and back.</h2>
+  <ol class="steps">
+    <li><strong>Write to us</strong><span>The model, what's wrong and a few photos of the panel or part.</span></li>
+    <li><strong>Quote &amp; timeline</strong><span>We reply with what we'd do, the price and when it can be ready.</span></li>
+    <li><strong>Send it in</strong><span>Usually just the panel or part. We tell you exactly what to send and how to pack it.</span></li>
+    <li><strong>In the workshop</strong><span>Restoration, fabrication or printing. Photos along the way if you want them.</span></li>
+    <li><strong>Back to you</strong><span>Packed carefully and shipped, with photos of the finished piece before it leaves.</span></li>
+  </ol>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="section-label">— FAQ</div>
+  <h2>Questions we hear <em>most.</em></h2>
+  <div class="faq-list">
+    <details>
+      <summary>Do you repair electronics?</summary>
+      <p>No. We work on the visual side only: panels, side cheeks, enclosures and small parts. Electronic repairs stay with your technician, and we're happy to work alongside them.</p>
+    </details>
+    <details>
+      <summary>Do I need to send the whole instrument?</summary>
+      <p>Usually not. Most jobs need only the panel, the side cheeks or the part itself. Tell us the model and the job, and we'll say exactly what to send.</p>
+    </details>
+    <details>
+      <summary>How long does it take?</summary>
+      <p>It depends on the job and the queue. You get a timeline together with the quote, before anything is sent.</p>
+    </details>
+    <details>
+      <summary>How much does it cost?</summary>
+      <p>Every job is quoted individually, because every panel arrives in a different condition. Send photos and we'll give you a price.</p>
+    </details>
+    <details>
+      <summary>Do you work with clients outside Poland?</summary>
+      <p>Yes. Many of our clients are abroad. Shipping is agreed for each job.</p>
+    </details>
+    <details>
+      <summary>Can you make panels or enclosures for my own instrument?</summary>
+      <p>Yes, from a single prototype to a production run of a few hundred pieces. Send a drawing or a sketch and the quantity you have in mind. <a href="#makers">More for makers</a></p>
+    </details>
+    <details>
+      <summary>Can you reproduce a part I no longer have?</summary>
+      <p>Often yes. We need something to measure: a matching part from another unit, or clear photos with dimensions. <a href="#parts">How part reproduction works</a></p>
+    </details>
   </div>
 </section>
 
