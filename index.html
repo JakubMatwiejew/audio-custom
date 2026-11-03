@@ -824,36 +824,6 @@
 
   /* === PROCESS === */
   .process { border-top: 1px solid var(--line); }
-  .steps {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 24px;
-    counter-reset: step;
-  }
-  .steps li {
-    counter-increment: step;
-    border-top: 2px solid var(--ink);
-    padding-top: 20px;
-  }
-  .steps li::before {
-    content: counter(step, decimal-leading-zero);
-    display: block;
-    font-family: var(--serif);
-    font-style: italic;
-    color: var(--accent);
-    font-size: 18px;
-    margin-bottom: 16px;
-  }
-  .steps strong {
-    display: block;
-    font-family: var(--serif);
-    font-weight: 400;
-    font-size: 21px;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px;
-  }
-  .steps span { font-size: 14px; line-height: 1.6; color: var(--ink-soft); }
 
   /* === FAQ === */
   .faq { border-top: 1px solid var(--line); background: var(--bg-warm); }
@@ -939,14 +909,12 @@
     .rep-row .card-status { grid-row: 1; grid-column: 2; align-self: center; }
     .card, .card + .card { padding: 28px 20px 32px 0; border-right: 0; border-bottom: 1px solid var(--line); }
     .card:nth-child(even) { padding-left: 20px; border-left: 1px solid var(--line); }
-    .steps { grid-template-columns: 1fr 1fr; gap: 32px 20px; }
     .faq-list summary { font-size: 19px; }
   }
   @media (max-width: 560px) {
     .card-grid, .card-grid.cols-5 { grid-template-columns: 1fr; }
     .rep-photos, .photo-row, .photo-row.cols-3 { grid-template-columns: 1fr; }
     .card:nth-child(even) { padding-left: 0; border-left: 0; }
-    .steps { grid-template-columns: 1fr; }
   }
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after { animation: none !important; transition: none !important; }
@@ -1237,13 +1205,33 @@
 <section class="process" id="process">
   <div class="section-label">— How it works</div>
   <h2>Five steps from your bench to <em>ours</em> and back.</h2>
-  <ol class="steps">
-    <li><strong>Write to us</strong><span>The model, what's wrong and a few photos of the panel or part.</span></li>
-    <li><strong>Quote &amp; timeline</strong><span>We reply with what we'd do, the price and when it can be ready.</span></li>
-    <li><strong>Send it in</strong><span>Usually just the panel or part. We tell you exactly what to send and how to pack it.</span></li>
-    <li><strong>In the workshop</strong><span>Restoration, fabrication or printing. Photos along the way if you want them.</span></li>
-    <li><strong>Back to you</strong><span>Packed carefully and shipped, with photos of the finished piece before it leaves.</span></li>
-  </ol>
+  <div class="card-grid cols-5">
+    <div class="card">
+      <div class="card-num">01</div>
+      <h3>Write to us</h3>
+      <p>The model, what's wrong and a few photos of the panel or part.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">02</div>
+      <h3>Quote &amp; timeline</h3>
+      <p>We reply with what we'd do, the price and when it can be ready.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">03</div>
+      <h3>Send it in</h3>
+      <p>Usually just the panel or part. We tell you exactly what to send and how to pack it.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">04</div>
+      <h3>In the workshop</h3>
+      <p>Restoration, fabrication or printing. Photos along the way if you want them.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">05</div>
+      <h3>Back to you</h3>
+      <p>Packed carefully and shipped, with photos of the finished piece before it leaves.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ============ FAQ ============ -->
