@@ -677,6 +677,28 @@
     border-radius: 999px;
     transition: all 0.25s;
   }
+  .socials .copy-email {
+    font: inherit;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 14px 24px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    background: var(--accent);
+    color: var(--bg);
+    cursor: pointer;
+    transition: all 0.25s;
+  }
+  .socials .copy-email:hover { background: var(--accent-dark); border-color: var(--accent-dark); }
+  .socials a:focus-visible, .socials .copy-email:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .socials { flex-wrap: wrap; }
+  .contact-email { user-select: all; }
+  .contact-hint {
+    margin-top: 32px;
+    font-size: 15px;
+    color: rgba(250,250,247,0.6);
+  }
   .socials a:hover {
     background: var(--bg);
     color: var(--ink);
@@ -1075,7 +1097,7 @@
       <span class="card-status status-soon">Coming soon</span>
     </div>
   </div>
-  <p class="note-line">Looking for a specific model? <a href="mailto:custom@audiocustom.pl?subject=Replacement%20panel%20inquiry">Ask about a replacement panel</a></p>
+  <p class="note-line">Looking for a specific model? <a href="#contact">Ask about a replacement panel</a></p>
 </section>
 
 <!-- ============ MAKERS ============ -->
@@ -1126,7 +1148,7 @@
       <p>Legends, scales and logos printed on the finished surface.</p>
     </div>
   </div>
-  <p class="note-line">One supplier from sketch to finished product. We start with a prototype made exactly like the series version, then produce the run. <a href="mailto:custom@audiocustom.pl?subject=Panels%20%2F%20enclosures%20for%20my%20instrument">Send us your sketch</a></p>
+  <p class="note-line">One supplier from sketch to finished product. We start with a prototype made exactly like the series version, then produce the run. <a href="#contact">Send us your sketch</a></p>
 </section>
 
 <!-- ============ PARTS / 3D ============ -->
@@ -1277,9 +1299,11 @@
   <h2>Have a panel that needs <em>saving?</em></h2>
   <a class="contact-email" href="mailto:custom@audiocustom.pl?subject=Project%20inquiry%20—%20Audio%20Custom">custom@audiocustom.pl</a>
   <div class="socials">
-    <a href="https://instagram.com/audiocustompl" target="_blank" rel="noopener">Instagram · @audiocustompl</a>
-    <a href="mailto:custom@audiocustom.pl">Send an email</a>
+    <button type="button" class="copy-email" id="copy-email" data-email="custom@audiocustom.pl">Copy email address</button>
+    <a href="mailto:custom@audiocustom.pl?subject=Project%20inquiry">Open in your email app</a>
+    <a href="https://instagram.com/audiocustompl" target="_blank" rel="noopener">Instagram DM · @audiocustompl</a>
   </div>
+  <p class="contact-hint">Tell us the model, what you need and add a few photos or a sketch with dimensions.</p>
 </section>
 
 <footer>
@@ -1288,6 +1312,22 @@
 </footer>
 
 <script>
+  // Copy email (works where mail apps don't open, e.g. webmail users)
+  const copyBtn = document.getElementById('copy-email');
+  copyBtn.addEventListener('click', async () => {
+    const email = copyBtn.dataset.email;
+    try {
+      await navigator.clipboard.writeText(email);
+    } catch (e) {
+      const r = document.createRange();
+      r.selectNodeContents(document.querySelector('.contact-email'));
+      const sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r);
+      try { document.execCommand('copy'); } catch (_) {}
+    }
+    copyBtn.textContent = 'Copied: ' + email;
+    setTimeout(() => { copyBtn.textContent = 'Copy email address'; }, 2500);
+  });
+
   // Nav border on scroll
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => {
