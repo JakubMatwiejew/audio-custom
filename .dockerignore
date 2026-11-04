@@ -3,3 +3,5 @@ Dockerfile
 .dockerignore
 CNAME
 *.md
+tools
+_nav.html

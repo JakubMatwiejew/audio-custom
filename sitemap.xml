@@ -3,15 +3,33 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://audiocustom.pl/</loc>
-    <lastmod>2026-11-03</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-11-04</lastmod>
     <priority>1.0</priority>
     <image:image><image:loc>https://audiocustom.pl/hero.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://audiocustom.pl/space-echo-re-201-panel/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.9</priority>
     <image:image><image:loc>https://audiocustom.pl/replacement-re201.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://audiocustom.pl/chorus-echo-re-301-panel/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.9</priority>
     <image:image><image:loc>https://audiocustom.pl/replacement-re301.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://audiocustom.pl/makers/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.8</priority>
     <image:image><image:loc>https://audiocustom.pl/makers-output-front.jpg</image:loc></image:image>
-    <image:image><image:loc>https://audiocustom.pl/makers-output-back.jpg</image:loc></image:image>
-    <image:image><image:loc>https://audiocustom.pl/makers-expander.jpg</image:loc></image:image>
+    <image:image><image:loc>https://audiocustom.pl/makers-miltone-series.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://audiocustom.pl/parts/</loc>
+    <lastmod>2026-11-04</lastmod>
+    <priority>0.7</priority>
     <image:image><image:loc>https://audiocustom.pl/parts-data-knob.jpg</image:loc></image:image>
     <image:image><image:loc>https://audiocustom.pl/parts-mpc60-lcd-housing.jpg</image:loc></image:image>
   </url>
