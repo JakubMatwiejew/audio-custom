@@ -744,7 +744,7 @@ figcaption {
   vector-effect: non-scaling-stroke;
 }
 .routes-map .route.far { stroke-width: 1.6; }
-.routes-map .country { fill: var(--accent); fill-opacity: 0.55; stroke: var(--bg); stroke-width: 0.6; }
+.routes-map .country { fill: var(--accent); fill-opacity: 0.7; stroke: var(--bg); stroke-width: 0.6; }
 .routes-map .country.home { fill-opacity: 1; }
 .routes-map .dest { fill: var(--ink); }
 .routes-map .dest-label, .routes-map .origin-label {
@@ -771,7 +771,7 @@ figcaption {
 }
 .routes-map.is-ready.is-drawn .dest, .routes-map.is-ready.is-drawn .country {
   opacity: 1;
-  transition: opacity 0.5s ease calc(var(--i) * 80ms + 1.2s);
+  transition: opacity 0.6s ease calc(var(--i) * 110ms + 0.3s);
 }
 .regions {
   display: grid;
